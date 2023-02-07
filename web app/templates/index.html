@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/staticFiles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body >
+   <div id="main">
+    <div id="menu">
+        <h3>Menu</h3>
+        <a href="/"><button>Home</button></a>
+        <a href="/cam"><button >Use Web Camera a</button></a>
+        <a href="/up"><button >Upload a Video</button></a>
+        <a href="/find"><button >Find a Doctor</button></a>
+        
+        
+    </div>
+    <div id="con">
+        <div class="matter" style="text-align: center;">
+            <h2>Automatic Depression Using Visiual & Vocal Expression</h2>
+        </div>
+        
+        <div id="vid">
+           {% block content%}
+           {% endblock %} 
+        </div>
+        <div class="matter foot">
+            <div class="guide">
+                <table >
+                    <th>Devaloped by</th>
+                    <tr>
+                        <td>student 1</td>
+                        <td> student 2</td>
+                    </tr>
+                    <tr>
+                        <td>student 3</td>
+                        <td>student 4</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="guide">
+                <div class="gu">
+                    <p>Guided by</p>
+                    <p>Guide Nmae</p>
+
+                </div>
+                
+            </div>
+           
+        </div>
+        
+    </div>
+   </div>
+   <script src="/staticFiles/scrip.js"></script>
+</body>
+</html>

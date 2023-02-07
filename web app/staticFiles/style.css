@@ -1,0 +1,186 @@
+body{
+    margin: 0;
+    font-size: 19px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+h2{
+    font-weight: 500;
+}
+#main{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+#menu{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 30vw;
+    background-color: rgb(230, 238, 238);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#con{
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+}
+a
+{
+    margin-top: 20px;
+    height: 35px;
+    border-radius: 5px;
+}
+button{
+    background-color: inherit;
+    border: none;
+    height: 25px;
+    margin-top: 5px;
+    text-align: left;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+   
+    
+}
+a:hover{
+    background-color: rgb(205, 218, 218);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 200ms;
+}
+.matter{
+    background-color: rgb(29, 182, 55);
+    width: 100%;
+    color: aliceblue;
+    
+}
+#vid{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2.5%;
+    width: 95%;
+    height: 60vh;
+    border: 5px;
+    border-color: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 100ms;
+}
+#vid:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.38);
+    transition: 100ms;
+}
+table{
+    margin: 10px 10px 10px 40px;
+    padding: 5px;
+    font-size: 19px;
+}
+th{
+    padding: 10px;
+    font-weight: 500;
+}
+td{
+    padding: 5px;
+    font-weight: 400;
+}
+.foot{
+    display: flex;
+    justify-content: left;
+}
+.guide{
+    width: 50%;
+    justify-content: center;
+    
+}
+.gu{
+  justify-content: end; 
+  width: 40%; 
+  margin: 25px 25px 0px 200px;
+
+}
+.bo{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-self: flex-end;
+    height: 70px;
+
+}
+.bo > button{
+    background-color: 	rgb(2, 117, 216);
+    height: 35px;
+    color: azure;
+}
+.bo>button:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.38);
+    background-color: rgb(8, 108, 195);
+    transition: 100ms;
+}
+.bo>div{
+    background-color: 	rgb(2, 117, 216);
+    height: 25px;
+    color: azure;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: .90em;
+    margin-top: 5px;
+}
+.bo>div:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.38);
+    background-color: rgb(8, 108, 195);
+    transition: 100ms;
+}
+.but{
+    width: 50%;
+    display: block;
+}
+#main__video{
+    height: 237px;
+    width: 400px;
+}
+#upload{
+    display: flex;
+    flex-direction: row;
+    
+    width: 400px;
+    height: 40px;
+    border: 5px;
+    border-color: black ;
+    margin-bottom: 50px
+}
+#mainup{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#input{
+    display: flex;
+    margin-top: 0px ;
+    height: 100%;
+    width: 70%;
+    background-color: rgb(237, 241, 245);
+    justify-content: left;
+    align-items: center;
+    padding-left: 7px;
+    font-size: 18px;
+}
+#input:hover{
+    box-shadow: 0 4px 6px 0 rgba(161, 158, 158, 0.4), 0 6px 10px 0 rgba(201, 197, 197, 0.38);
+    background-color: rgb(215, 221, 226);
+    transition: 100ms;
+}
+#upload>button{
+    width: 30%;
+    height: 100%;
+    margin: 0;
+    background-color: rgb(8, 108, 195);
+    color: azure;
+}
+#upload>button:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.38);
+    background-color: rgb(8, 108, 195);
+    transition: 100ms;
+}

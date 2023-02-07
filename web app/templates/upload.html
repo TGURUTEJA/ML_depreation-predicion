@@ -1,0 +1,45 @@
+{%extends 'index.html'%}
+{% block content %}
+<div id="mainup">
+    <input type="file" id="default-btn" hidden>
+    
+    <div id="upload">
+        <P id="input">hello</P>
+        <button onclick="defaultBtnActive()">SELECT FILE</button>
+    </div>
+</div>
+    
+<div class="bo">
+        <button onclick="upload()">Upload</button>
+        <a href="/resule"><button >Start Data Extracting </button></a>
+</div>
+
+<script>
+    const defaultBtn = document.querySelector("#default-btn");
+    const customBtn = document.querySelector("#custom-btn");
+    const text = document.querySelector("#input")
+    function defaultBtnActive(){
+        defaultBtn.click();
+      }
+      defaultBtn.addEventListener("change", function(){
+        const file = this.files[0];
+        if (file){
+            text.textContent=file.name;
+        }
+        else{
+            text.textContent='';
+        }
+      });
+      function upload(){
+        const file =defaultBtn.files[0];
+        let formData = new FormData();
+        formData.append('file','filenmae')
+        formData.append('video', file, "video.mp4");
+        fetch('/upload', {
+          method: 'POST',
+          body: formData
+      
+      });
+      }
+</script>
+{% endblock %}
