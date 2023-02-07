@@ -1,7 +1,6 @@
 from flask import Flask,render_template, request, session,Response
 import os
 import cv2
-import shutil
 from flask import jsonify
 import numpy as np
 from keras.models import model_from_json
