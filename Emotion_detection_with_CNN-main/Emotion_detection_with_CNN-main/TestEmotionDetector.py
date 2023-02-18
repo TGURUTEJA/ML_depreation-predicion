@@ -6,17 +6,17 @@ from keras.models import model_from_json
 emotion_dict = {0: "Angry", 1: "Disgusted", 2: "Fearful", 3: "Happy", 4: "Neutral", 5: "Sad", 6: "Surprised"}
 
 # load json and create model
-json_file = open('Emotion_detection_with_CNN-main\model\emotion_model.json', 'r')
+json_file = open('S:\depreation predicion\ML_depreation-predicion\Emotion_detection_with_CNN-main\Emotion_detection_with_CNN-main\model\emotion_model.json', 'r')
 loaded_model_json = json_file.read()
 json_file.close()
 emotion_model = model_from_json(loaded_model_json)
 
 # load weights into new model
-emotion_model.load_weights("Emotion_detection_with_CNN-main\model\emotion_model.h5")
+emotion_model.load_weights("S:\depreation predicion\ML_depreation-predicion\Emotion_detection_with_CNN-main\Emotion_detection_with_CNN-main\model\emotion_model.h5")
 print("Loaded model from disk")
 
 # start the webcam feed
-#cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(0)
 
 # pass here your video path
 # you may download one from here : https://www.pexels.com/video/three-girls-laughing-5273028/
@@ -28,7 +28,7 @@ while True:
     frame = cv2.resize(frame, (1280, 720))
     if not ret:
         break
-    face_detector = cv2.CascadeClassifier('Emotion_detection_with_CNN-main\\haarcascades\\haarcascade_frontalface_default.xml')
+    face_detector = cv2.CascadeClassifier('S:\depreation predicion\ML_depreation-predicion\Emotion_detection_with_CNN-main\Emotion_detection_with_CNN-main\haarcascades\haarcascade_frontalface_default.xml')
     gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
     # detect faces available on camera

@@ -76,6 +76,8 @@ function down(){
     body: formData
 
 });
+window.location.href = '/resule';
+alert("uploaded");
 }
 
 

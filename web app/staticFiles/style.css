@@ -156,7 +156,7 @@ td{
     justify-content: center;
     align-items: center;
 }
-#input{
+.input{
     display: flex;
     margin-top: 0px ;
     height: 100%;
@@ -167,7 +167,7 @@ td{
     padding-left: 7px;
     font-size: 18px;
 }
-#input:hover{
+.input:hover{
     box-shadow: 0 4px 6px 0 rgba(161, 158, 158, 0.4), 0 6px 10px 0 rgba(201, 197, 197, 0.38);
     background-color: rgb(215, 221, 226);
     transition: 100ms;
@@ -184,3 +184,109 @@ td{
     background-color: rgb(8, 108, 195);
     transition: 100ms;
 }
+.strat{
+    width: 30%;
+    height: 100%;
+    margin: 0;
+    background-color: rgb(8, 108, 195);
+    color: azure;
+}
+.start:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.38);
+    background-color: rgb(8, 108, 195);
+    transition: 100ms;
+}
+#data{
+    margin-top: 20px;
+    width: 400px;
+}
+#result{
+    overflow-y: scroll;
+}
+.text{
+    text-align: start;
+    background-color:rgb(29, 182, 55); 
+    color: aliceblue;
+    margin: 20px 20px 0px 20px;
+font-weight: 500;
+height: 30px;
+padding-left: 20px;
+}
+.in{
+    margin-top: 0px;
+    background-color: rgb(237, 241, 245);
+    text-align: start;
+    margin: 0px 20px 0px 20px;
+}
+.in>p{
+    margin: 0px 20px 0px 20px;
+
+}
+#lottie{
+    width: 400px;
+
+}
+.loader{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    margin-left: 0px;
+    justify-content: center;
+    align-items: center;
+}
+#h{
+    font-weight: 500;
+    color: rgb(149, 150, 151);
+}
+*::-webkit-scrollbar {
+    width: 10px;
+    width: 10px;
+  }
+  *::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #DFE9EB;
+  }
+  
+  *::-webkit-scrollbar-track:hover {
+    background-color: #B8C0C2;
+  }
+  
+  *::-webkit-scrollbar-track:active {
+    background-color: #B8C0C2;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgb(29, 182, 55); ;
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #62A34B;
+  }
+  
+  *::-webkit-scrollbar-thumb:active {
+    background-color: #62A34B;
+  }
+
+  #find{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    overflow: scroll;
+    overflow-x: hidden; 
+    margin-left: 10px;
+  }
+  #find>div>p{
+    margin: 0px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  #find>div{
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }

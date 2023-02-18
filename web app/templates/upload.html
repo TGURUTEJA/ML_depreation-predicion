@@ -4,20 +4,20 @@
     <input type="file" id="default-btn" hidden>
     
     <div id="upload">
-        <P id="input">hello</P>
+        <P class="input"></P>
         <button onclick="defaultBtnActive()">SELECT FILE</button>
     </div>
 </div>
     
 <div class="bo">
         <button onclick="upload()">Upload</button>
-        <a href="/resule"><button >Start Data Extracting </button></a>
+        <button class="start"  onclick="window.location.href = '/resule'">Start Data Extracting </button>
 </div>
 
 <script>
     const defaultBtn = document.querySelector("#default-btn");
     const customBtn = document.querySelector("#custom-btn");
-    const text = document.querySelector("#input")
+    const text = document.querySelector(".input")
     function defaultBtnActive(){
         defaultBtn.click();
       }
@@ -31,6 +31,7 @@
         }
       });
       function upload(){
+        alert("Uploaded");
         const file =defaultBtn.files[0];
         let formData = new FormData();
         formData.append('file','filenmae')
@@ -38,7 +39,6 @@
         fetch('/upload', {
           method: 'POST',
           body: formData
-      
       });
       }
 </script>

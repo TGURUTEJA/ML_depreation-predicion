@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <title>Document</title>
 </head>
 <body >
@@ -31,6 +31,8 @@
            {% block content%}
            {% endblock %} 
         </div>
+
+        
         <div class="matter foot">
             <div class="guide">
                 <table >
@@ -58,6 +60,28 @@
         
     </div>
    </div>
+   <div class="loader">
+    <div id="lottie">
+
+    </div>
+   <p id="h">Your Data is Extracting please wait</p>
+   </div>
+  
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js" integrity="sha512-fTTVSuY9tLP+l/6c6vWz7uAQqd1rq3Q/GyKBN2jOZvJSLC5RjggSdboIFL1ox09/Ezx/AKwcv/xnDeYN9+iDDA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script>
+    bodymovin.loadAnimation({
+        container:document.getElementById('lottie'),
+        path:'staticFiles\\85406-data-loading.json'
+    });
+    $('.start').on('click',function(){
+        $('.loader').fadeIn("slow");
+    })
+    $(window).on('load',function(){
+        $('.loader').fadeOut("slow");
+    })
+</script>
    <script src="/staticFiles/scrip.js"></script>
 </body>
 </html>

@@ -1,8 +1,30 @@
 {%extends 'index.html'%}
 {% block content %}
-<div>
-    <img src="{{ url_for('video') }}" width="50%" height="100px"/>
-</div>
+<div id="result">
+    <div class="text">
+        <p>Video</p>
+    </div>
+    <video id="data" controls>
+        <source src="staticFiles\uploads\video_output.mp4" type="video/mp4">
+        Your browser does not support HTML video.
+      </video>
+        <div class="text">
+            <p>Text content</p>
+        </div>
+        <div class="in">
+            <p>{{r}}</p>
+        </div>
+        <div class="text">
+            <p>depression analysis</p>
+        </div>
+        <div>
+            {% if per > 60 %}
+            <p>Depression Persentage : <b style="color:red">{{per}} %</b></p>
+            {% else %}
+            <p>Depression Persentage : <b style="color:green">{{per}} %</b></p>
+            {% endif %}
+        </div>
+</div> 
 
 
 
