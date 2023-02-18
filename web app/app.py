@@ -1,15 +1,17 @@
-from flask import Flask,render_template, request, session,Response
+from flask import Flask,render_template, request
 import os
 import cv2
 from flask import jsonify
 import numpy as np
 from keras.models import model_from_json
-import threading
 import numpy as np
 from keras.models import model_from_json
 from moviepy.editor import *
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from time import perf_counter
+
+import requests
+import time
 
 
 
@@ -75,8 +77,6 @@ def generate_frames():
 
 
 
-import requests
-import time
 API_KEY_ASSEMBLYAI="e1bceda9131140eaabc1bc63f2c26ad9"
 upload_endpoint = 'https://api.assemblyai.com/v2/upload'
 transcript_endpoint = 'https://api.assemblyai.com/v2/transcript'
